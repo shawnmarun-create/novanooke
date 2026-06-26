@@ -3,8 +3,8 @@
 */
 const PRODUCTS = window.PRODUCTS || [];
 const CURRENCY = '$';
-const WEB3FORMS_KEY = window.WEB3FORMS_KEY || 'YOUR_WEB3FORMS_KEY_HERE';
-const NOTIFY_EMAIL = 'shawnmarun@gmail.com';
+const WEB3FORMS_KEY = window.WEB3FORMS_KEY || '1cbf20b8-cfce-424b-8312-2f3e230dc9e2';
+const NOTIFY_EMAIL = 'novanookessence@gmail.com';
 
 /* -------- helpers -------- */
 const $ = (s, p=document) => p.querySelector(s);
