@@ -212,9 +212,11 @@ function pageIndex(){
     feat.innerHTML = pool.map(productCard).join('');
   }
   const womenC = PRODUCTS.filter(p => p.gender==='women').length;
-  const menC   = PRODUCTS.filter(p => p.gender==='men').length;
+ const menC   = PRODUCTS.filter(p => p.gender==='men').length;
   $('#women-count') && ($('#women-count').textContent = `${womenC} fragrances`);
   $('#men-count') && ($('#men-count').textContent = `${menC} fragrances`);
+  const uniC = PRODUCTS.filter(p => p.gender==='unisex').length;
+  $('#unisex-count') && ($('#unisex-count').textContent = `${uniC} fragrances`);
   const newC = $('#new-grid');
   if (newC){
     const newest = [...PRODUCTS].sort((a,b)=>b.id-a.id).slice(0,8);
